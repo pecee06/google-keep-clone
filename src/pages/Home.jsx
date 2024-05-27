@@ -26,7 +26,7 @@ const Home = () => {
     })
   },[data.uid])
 
-  if (Object.keys(data) == 0) return <Navigate to="/" />
+  if (Object.keys(data) == 0) return <Navigate to="/signup" />
   if (loading) return (
     <div className="h-[50vh] flex justify-center items-center dark:bg-slate-900 dark:text-white">
       <h1 className="font-bold" style={{fontSize: "4vmax"}}>Loading...</h1>

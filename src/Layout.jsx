@@ -12,7 +12,6 @@ const Layout = () => {
   const [userData, setUserData] = useState({})
   const [loggedIn, setLoggedIn] = useState(false)
   const [todos, setTodos] = useState([])
-  const [loading, setLoading] = useState(true)
   const [searchContent, setSearchContent] = useState("")
   const navigate = useNavigate()
 
@@ -80,9 +79,9 @@ const Layout = () => {
       }}>
         <TodoProvider value={{todos, setTodos, addTodo, editTodo, deleteTodo, searchContent, setSearchContent}}>
           <Container className="dark:bg-slate-900 dark:text-white flex flex-col gap-5">
-            <Header/>
-            <Outlet/>
-          </Container>
+              <Header/>
+              <Outlet/>
+            </Container>
         </TodoProvider>
       </UserProvider>
     </ThemeProvider>

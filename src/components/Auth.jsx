@@ -27,7 +27,7 @@ const Auth = ({label="signup"}) => {
       if (res){
         setData({...authService.getCurrentUser(), name: formData.name})
         login()
-        navigate("/home")
+        navigate("/")
       }
     })
     .catch(err => {

@@ -39,7 +39,7 @@ const Header = () => {
             authService.logout()
             .then(()=>{
               logout()
-              navigate("/")
+              navigate("/signup")
             })
             .catch(err => {
               alert(err.message)

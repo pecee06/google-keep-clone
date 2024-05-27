@@ -9,9 +9,9 @@ import Home from './pages/Home.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Auth/>}/>
+      <Route path='' element={<Home/>}/>
+      <Route path='signup' element={<Auth/>}/>
       <Route path='login' element={<Auth label='login'/>}/>
-      <Route path='home' element={<Home/>}/>
     </Route>
   )
 )
